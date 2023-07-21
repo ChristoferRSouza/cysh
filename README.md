@@ -1,31 +1,36 @@
 # cysh
 
-This project offers a single shell script that quickly initializes a [Cypress](https://cypress.io) testing automation project from scratch.
+Este projeto oferece um único script de shell que inicializa rapidamente um projeto de automação de teste [Cypress](https://cypress.io) do zero.
 
-> **Note:** This script only works on Unix-based operating systems, such as Linux and macOS.
+> **Observação:** Este script só funciona em sistemas operacionais baseados em Unix, como Linux e macOS.
 
-## Usage
+## Uso
 
-1. Download the [`cy.sh`](./cy.sh) file and move it to your root directory
-2. In the root directory, run `./cy.sh name-of-the-project-you-want-to-create-here` to create a Cypress project from scratch (you might have to first give execution permission to the `cy.sh` file)
-- 2.1. Alternatively, you can run `./cy.sh name-of-your-project-here x.x.x` if you want to install a specific version of Cypress, other than its latest version.
-3. Close Cypress and access the newly created project (e.g., `cd name-of-your-project-here/`)
-4. Open it on your favorite IDE and start writing your Cypress tests! 🙌
+1. Baixe o arquivo [`cy.sh`](./cy.sh) e mova-o para o diretório raiz
+2. No diretório raiz, execute `./cy.sh nome-do-projeto-que-você-quer-criar-aqui` para criar um projeto Cypress do zero (você pode ter que primeiro dar permissão de execução para o arquivo `cy.sh`)
 
-## What does `cy.sh` do?
+- 2.1. Como alternativa, você pode executar `./cy.sh nome-do-seu-projeto-aqui x.x.x` se quiser instalar uma versão específica do Cypress, diferente da versão mais recente.
 
-1. It creates a project directory and accesses it
-2. Then, it initialize git and .gitignore
-3. After that, it creates a readme file to be defined
-4. It then initializes NPM
-5. It installs Cypress (if a version is provided, it will install it; otherwise, the latest version is installed)
-6. It creates cypress.env and cypress.env.example files defaulting them to empty objects
-7. Finally, it opens Cypress for the first time so that it creates its default structure.
+3. Feche o Cypress e acesse o projeto recém-criado (por exemplo, `cd nome-do-seu-projeto-aqui/`)
+4. Abra-o em sua IDE favorita e comece a escrever seus testes Cypress! 🙌
 
-## Support this project
+## O que `cy.sh` faz?
 
-If you liked this project, consider leaving a ⭐.
+1. Crie um diretório de projeto e acesse-o
+2. Em seguida, inicializa git e .gitignore
+3. Em seguida, inicializa o NPM
+4. Ele instala o Cypress (se uma versão for fornecida, ele a instalará; caso contrário, a versão mais recente será instalada)
+5. Depois disso, ele cria um arquivo README com base no meu uso
+6. Ele cria arquivos cypress.env e cypress.env.example padronizando-os para objetos vazios
+7. Adiciona scripts para run e open
+8. Por fim, abre o Cypress pela primeira vez para que ele crie sua estrutura padrão.
+9. Adiciona [IntelliSense](https://docs.cypress.io/guides/tooling/IDE-integration#Triple-slash-directives)
+   Obs.: É necessario executar cypress para criação dos arquivos base cypress/support/commands.js
 
-___
+## Apoie este projeto
 
-Created with 🖤 by [Walmyr](https://walmyr.dev).
+Se você gostou deste projeto, considere deixar um ⭐.
+
+---
+
+Esse script foi baseado no projeto [cysh](https://github.com/wlsf82/cysh) de [Walmyr](https://walmyr.dev).
