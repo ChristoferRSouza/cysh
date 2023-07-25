@@ -2,7 +2,9 @@
 
 Este projeto oferece um único script de shell que inicializa rapidamente um projeto de automação de teste [Cypress](https://cypress.io) do zero.
 
-> **Observação:** Este script só funciona em sistemas operacionais baseados em Unix, como Linux e macOS.
+> **Observação:** Este script funciona melhor em sistemas operacionais baseados em Unix, como Linux e macOS.
+
+> **Observação2:** Para windows se utilizado bash(acompanha na instalação do git) ira funcionar com exceção do passo 9.
 
 ## Uso
 
@@ -13,6 +15,20 @@ Este projeto oferece um único script de shell que inicializa rapidamente um pro
 
 3. Feche o Cypress e acesse o projeto recém-criado (por exemplo, `cd nome-do-seu-projeto-aqui/`)
 4. Abra-o em sua IDE favorita e comece a escrever seus testes Cypress! 🙌
+
+## Uso 2
+
+Apenas execute o comando abaixo no terminal trocando nome-do-projeto
+
+```shell
+curl -fsSL https://raw.githubusercontent.com/ChristoferRSouza/cysh/main/cy.sh | sh -s nome-do-projeto
+```
+
+Passando versão do cypress
+
+```shell
+curl -fsSL https://raw.githubusercontent.com/ChristoferRSouza/cysh/main/cy.sh | sh -s nome-do-projeto x.x.x
+```
 
 ## O que `cy.sh` faz?
 
